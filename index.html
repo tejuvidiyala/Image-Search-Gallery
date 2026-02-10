@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Search Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Image Search Gallery</h1>
+  <button id="themeToggle">🌙</button>
+</header>
+
+<input id="searchInput" placeholder="Search images and press Enter">
+
+<div class="filters">
+  <select id="orientation">
+    <option value="">Any Orientation</option>
+    <option value="landscape">Landscape</option>
+    <option value="portrait">Portrait</option>
+  </select>
+
+  <select id="color">
+    <option value="">Any Color</option>
+    <option value="black_and_white">B&W</option>
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+  </select>
+</div>
+
+<div id="history"></div>
+<p id="error"></p>
+
+<div id="skeleton" class="hidden"></div>
+<div id="imageContainer"></div>
+
+<!-- MODAL (HIDDEN BY DEFAULT — IMPORTANT) -->
+<div id="modal" class="hidden">
+  <span id="closeModal">&times;</span>
+  <img id="modalImg" alt="Full view">
+</div>
+
+<script src="image.js"></script>
+</body>
+</html>
